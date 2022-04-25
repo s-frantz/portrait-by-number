@@ -1,0 +1,1 @@
+"C:\PythonVenv\PaintByNumber\Scripts\python.exe" -m jupyter notebook
