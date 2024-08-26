@@ -6,7 +6,7 @@ Basic computer vision algorithms perform OK at foreground-background segmentatio
 
 Relatively more specific models exist for segmenting various sub-categories of features, mostly building on UNET models originally developed for medical image segmentation.
 
-We now have very strong models for segmenting portraits, and many of these are available on GitHub. Google's mediapipe "selfie segmenter" [model](https://mediapipe-studio.webapps.google.com/demo/image_segmenter) in TensorFlow is noteworthy, differentiation face, body, hair, hat, clothing and background quickly and with good results.
+We now have very strong models for segmenting portraits, and many of these are available on GitHub [e.g., foreground-background](https://github.com/by321/me2net/blob/main/readme.md) & [selfie segmentation](https://mediapipe-studio.webapps.google.com/demo/image_segmenter). The latter is interesting -- a Google mediapipe model in TensorFlow, which differentiates face / body / hair / hat / clothing quickly and with good results.
 
 The model we take on board in this project is comparable, but comes from a face-segmentation [project](https://github.com/zllrunning/face-parsing.PyTorch), which segments portraits into 18 classes, going as granular as r_brow, l_brow (right eyebrow, left eyebrow) and u_lip, l_lip (upper lip, lower lip).
 
