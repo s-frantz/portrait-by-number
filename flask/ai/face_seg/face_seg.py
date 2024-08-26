@@ -5,7 +5,7 @@ import cv2
 import torch
 import torchvision.transforms as transforms
 
-from model import BiSeNet
+from src.model import BiSeNet
 
 
 MODEL = osp.join(
@@ -93,7 +93,7 @@ def evaluate(impath):
 
 def save_inferenced(im, anno, save_path):
 
-    cv2.imwrite(save_path[:-4] +'.jpg', anno)
+    cv2.imwrite(save_path, anno)
     cv2.imwrite(save_path, im, [int(cv2.IMWRITE_JPEG_QUALITY), 100])
 
 
