@@ -28,7 +28,7 @@ Not all of these are interesting as paint-by-number super-classes, but we want t
 3. clothing
 4. background
 
-Separating these allows for using custom color-spaces (e.g., for skin tones), and for providing more detail in higher classes. The paint-time for an artist / puzzler will be determined largely by the number and complexity of paint-by-number blocks, as will, inversely, the quality of that end result. Focusing paint-time and resolution on higher-priority image regions will give our users a better ROI!
+Separating these allows for using custom color-spaces (e.g., for skin tones), and for providing more detail in higher classes. The paint-time for an artist / puzzler will be determined largely by the number and complexity of paint-by-number blocks, as will, inversely, the quality of that end result. Focusing paint-time and resolution on higher-priority image regions will give our users a better ROI.
 
 We also want to ensure that paint-by-number blocks do not bleed across these classes. Even if face & hair or hair & clothing look locally similar, a boundary should exist between them.
 
