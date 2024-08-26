@@ -5,7 +5,7 @@ import cv2
 import torch
 import torchvision.transforms as transforms
 
-from src.model import BiSeNet
+from utils.ai.src.model import BiSeNet
 
 
 MODEL = osp.join(
