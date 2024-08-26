@@ -77,7 +77,11 @@ def evaluate(impath):
 
     with torch.no_grad():
 
-        img = Image.open(impath)
+        if type(impath) == str:
+            img = Image.open(impath)
+        else:
+            img = impath
+            
         image = img.resize((512, 512), Image.BILINEAR)
         img = to_tensor(image)
         img = torch.unsqueeze(img, 0)

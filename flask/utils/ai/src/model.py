@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from utils.face_seg.src.resnet import Resnet18
+from utils.ai.src.resnet import Resnet18
 
 
 class ConvBNReLU(nn.Module):
