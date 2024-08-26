@@ -1,3 +1,0 @@
-notebook
-opencv-python
-scikit-image

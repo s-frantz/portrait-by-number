@@ -1,0 +1,6 @@
+.env
+.ipynb_checkpoints
+__pycache__
+
+# ignore inferenced images (tests)
+*_inferenced.*
