@@ -13,17 +13,18 @@ With the advent of deep learning, many more accurate models have now been writte
 
 One such use-case of interest to this project is for segmenting (esp. portrait-style) photos of people. The source code for such models are available on GitHub, including a few we looked at:
 
- - [foreground-background](https://github.com/by321/me2net/blob/main/readme.md)
- - [selfie segmentation](https://mediapipe-studio.webapps.google.com/demo/image_segmenter)
- - [face segmentation](https://github.com/zllrunning/face-parsing.PyTorch)
+ 1. [foreground-background](https://github.com/by321/me2net/blob/main/readme.md)
+ 2. [selfie segmentation](https://mediapipe-studio.webapps.google.com/demo/image_segmenter)
+ 3. [face segmentation](https://github.com/zllrunning/face-parsing.PyTorch)
+ 4. [face segmentation](https://huggingface.co/jonathandinu/face-parsing)
 
-Though the second of these, a Google media-pipe model written in TensorFlow, is quite interesting and able to segment face / body / hair / hat / clothing, our project opts to take on board the third, which segments portraits into 18 unique classes, as granular as r_brow, l_brow (right eyebrow, left eyebrow) and u_lip, l_lip (upper lip, lower lip).
+Though the second of these, a Google media-pipe model written in TensorFlow, is quite interesting and able to segment `face`, `body`, `hair`, `hat`, `clothing`, our project opts to take on board the third, which segments portraits into 18 unique classes, as granular as `r_brow`, `l_brow` (right eyebrow, left eyebrow) and `u_lip`, `l_lip` (upper lip, lower lip). The fourth project listed is extremely similar and may be a copy of #3 or vice versa.
 
 #### **Application**
 
 Not all of these are interesting as paint-by-number super-classes, but we want to differentiate:
 
-1. the face (incl. eyes, ears, mouth, nose, etc.)
+1. the face (eyes, ears, mouth, nose, etc.)
 2. face framing features (hair, hat, neck)
 3. clothing
 4. background
@@ -32,23 +33,23 @@ Separating these allows for using custom color-spaces (e.g., for skin tones), an
 
 We also want to ensure that paint-by-number blocks do not bleed across these classes. Even if face & hair or hair & clothing look locally similar, a boundary should exist between them.
 
-Below is the full list of features outputted by the deep learning model, and which we group into our four classes:
+Below is the full list of features outputted by the deep learning model:
 
- - 1 'skin',
- - 2 'l_brow',
- - 3 'r_brow',
- - 4 'l_eye',
- - 5 'r_eye',
- - 6 'eye_g',
- - 7 'l_ear',
- - 8 'r_ear',
- - 9 'ear_r',
- - 10 'nose',
- - 11 'mouth',
- - 12 'u_lip',
- - 13 'l_lip',
- - 14 'neck',
- - 15 'neck_l',
- - 16 'cloth',
- - 17 'hair',
- - 18 'hat'
+ - 1 'skin', #the face
+ - 2 'l_brow', #left eyebrow
+ - 3 'r_brow', #right eyebrow
+ - 4 'l_eye', #left eye
+ - 5 'r_eye', #right eye
+ - 6 'eye_g', #eye glasses
+ - 7 'l_ear', #left ear
+ - 8 'r_ear', #right ear
+ - 9 'ear_r', #ear ring
+ - 10 'nose', #nose
+ - 11 'mouth', #mouth
+ - 12 'u_lip', #upper lip
+ - 13 'l_lip', #lower lip
+ - 14 'neck', #neck
+ - 15 'neck_l', #necklace
+ - 16 'cloth', #clothing
+ - 17 'hair', #hair
+ - 18 'hat' #hat
