@@ -17,7 +17,7 @@ One such use-case of interest to this project is for segmenting (esp. portrait-s
  - [selfie segmentation](https://mediapipe-studio.webapps.google.com/demo/image_segmenter)
  - [face segmentation](https://github.com/zllrunning/face-parsing.PyTorch)
 
-Though the second of these, a Google media-pipe model written in TensorFlow, is quite interesting (able to segment face / body / hair / hat / clothing), our project opts to take on board the third, which segments portraits into 18 unique classes, as granular as r_brow, l_brow (right eyebrow, left eyebrow) and u_lip, l_lip (upper lip, lower lip).
+Though the second of these, a Google media-pipe model written in TensorFlow, is quite interesting and able to segment face / body / hair / hat / clothing, our project opts to take on board the third, which segments portraits into 18 unique classes, as granular as r_brow, l_brow (right eyebrow, left eyebrow) and u_lip, l_lip (upper lip, lower lip).
 
 #### **Application**
 
