@@ -2,5 +2,8 @@
 .ipynb_checkpoints
 __pycache__
 
+# ignore scratch directories
+_scratch
+
 # ignore inferenced images (tests)
 *_inferenced.*
